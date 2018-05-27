@@ -2,7 +2,14 @@
 
 Installation :
 
+- git clone https://github.com/NicolasDcq/ProjectFrameworkJS.git
+- cd ProjectFrameJs/
 - npm install
+
+Lancer les serveurs:
+
+- node node/app.js (serveur node)
+- npm start (serveur vueJs)
 
 
 Fonctionnalités :
