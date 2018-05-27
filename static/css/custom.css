@@ -1,0 +1,127 @@
+nav {
+    height: 85px;
+    background: linear-gradient(to bottom, #383838 0, #222 100%);
+    box-shadow: 1px 3px 12px #4c4b4b;
+}
+
+#app {
+    margin: 0 10%;
+}
+
+.search {
+    /*padding: 12px 40px;*/
+    /*margin: 8px 0;*/
+    box-sizing: border-box;
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    width: 20%;
+
+}
+
+.search input {
+    background-color: white;
+    background-image: url('../searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 10%;
+}
+
+img.poster {
+    height: 350px;
+}
+
+p.description {
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.field textarea {
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 8px 0;
+    resize: none;
+}
+
+.field label {
+    font-size: 18px;
+}
+
+.intitulé {
+    font-size: 25px;
+}
+
+div.actions {
+    padding-top: 20px;
+    padding-right: 20px;
+    float: right;
+}
+
+div.mark {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    font-size: 17px;
+    right: 5px;
+    padding: 2px;
+    background-color: #afafaf;
+}
+
+div.card-item {
+    margin-bottom: 10px;
+}
+
+.more_info {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.ft-right {
+    float: right;
+}
+
+.star-ratings-css {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 25px;
+    height: 25px;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    text-shadow: 0px 1px 0 #a2a2a2;
+}
+
+.star-ratings-css-top {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.star-ratings-css-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
+
+
+
