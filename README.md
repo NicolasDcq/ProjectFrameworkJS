@@ -3,7 +3,7 @@
 Installation :
 
 - git clone https://github.com/NicolasDcq/ProjectFrameworkJS.git
-- cd ProjectFrameJs/
+- cd ProjectFrameworkJs/
 - npm install
 
 Lancer les serveurs:
