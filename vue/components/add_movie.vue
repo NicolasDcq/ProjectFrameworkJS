@@ -22,8 +22,19 @@
                     <input type="text" v-model="movie_to_add.language"/>
                 </div>
                 <div class="field col m6">
-                    <label>Type :</label><br/>
-                    <input type="text" v-model="movie_to_add.type"/><br>
+                    <label>Type :</label>
+                    <select v-model="movie_to_add.type">
+                        <option disabled selected>Choisir un type</option>
+                        <option>Horreur</option>
+                        <option>Action</option>
+                        <option>Science Fiction</option>
+                        <option>Comédie</option>
+                        <option>Documentaire</option>
+                        <option>Historique</option>
+                        <option>Love story</option>
+                        <option>Drame</option>
+                    </select>
+
                 </div>
             </div>
             <div class="col s12 m12">

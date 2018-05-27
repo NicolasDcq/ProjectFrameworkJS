@@ -101,7 +101,19 @@
                 return this.message[0]
             },
             movies_search: function () {
-                return this.movies.filter(m => m.title.toLowerCase().indexOf(this.search.toLowerCase()) != -1);
+
+                let movies_to_search = this.search;
+                // Recherche multicritères : titre, année de sortie, type de film, langue, nom du réalisateur
+                return this.movies.filter(function(m){
+                    if(m.title.toLowerCase().indexOf(movies_to_search.toLowerCase()) !=-1 ||
+                        m.type.toLowerCase().indexOf(movies_to_search.toLowerCase()) != -1 ||
+                        m.year.toString().indexOf(movies_to_search) != -1 ||
+                        m.language.toLowerCase().indexOf(movies_to_search.toLowerCase()) != -1)
+                    {
+                        return m;
+                    }
+                })
+
             },
             movies: function () {
                 return this.$store.state.movies;
@@ -118,7 +130,7 @@
 
 <style>
     #msg {
-        2 color: red;
+        color: red;
     }
 
     #menu {

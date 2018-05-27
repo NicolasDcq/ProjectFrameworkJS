@@ -36,8 +36,6 @@
                         <div class="ft-right">
                         <button class="btn-floating btn-large waves-effect waves-light " @click="edit"><i
                                 class="material-icons">edit</i></button>
-                        <button class="btn-floating btn-large waves-effect waves-light " @click="remove"><i
-                                class="material-icons">delete</i></button>
                         <button class="btn-floating btn-large waves-effect waves-light " @click="mark"><i
                                 class="material-icons">star_half</i></button>
                         </div>
@@ -63,12 +61,6 @@
             edit() {
                 var link = this.movie.id + '/edit';
                 this.$router.push({path: link});
-            },
-            remove() {
-                this.movie_to_delete = this.movie;
-                this.$store.dispatch('removeMovieFromApi', this.movie_to_delete);
-                this.$router.push('/');
-                document.location.reload(true);
             },
             mark() {
                 var link = this.movie.id + '/mark';

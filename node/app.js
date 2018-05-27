@@ -73,15 +73,11 @@ app.post('/api/movies/poster/:id/', function (request, res) {
         if (err) {
             // An error occurred when uploading
         }
-
         let id = parseInt(request.params.id);
         movie = request.app.locals.movies.find(m => m.id === id);
         let pathname = request.file.destination;
         pathname += request.file.filename;
-        console.log(pathname);
-
         movie.poster_url = pathname;
-
     })
 })
 

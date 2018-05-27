@@ -124,4 +124,11 @@ div.card-item {
 }
 
 
+select{
+    display: block ;
+    margin-top: 8px;
+}
+
+
+
 
